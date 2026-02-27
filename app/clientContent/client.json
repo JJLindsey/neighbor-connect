@@ -1,0 +1,85 @@
+{
+    "id": "joes-electric",
+    "name": "Joe's Electric",
+    "tagline": "Fast, Reliable Electrical Service You Can Trust",
+    "category": "Electricians",
+    "phone": "(555) 234-5678",
+    "email": "joe@joeselectric.com",
+    "location": "Springfield, IL",
+    "serviceArea": "Springfield and surrounding areas within 30 miles",
+    "yearsExp": 15,
+    "verified": true,
+    "rating": 4.8,
+    "reviewCount": 47,
+    "availability": ["Mon–Fri", "Sat until 3pm"],
+    "photo": "https://unsplash.com/photos/man-in-blue-white-and-red-plaid-button-up-shirt-wearing-yellow-hard-hat-holding-black-zWOgsj3j0wA",
+    "heroImage": "/images/joe-hero.jpg",
+    "specialties": ["Panel Upgrades", "EV Chargers", "Emergency Service"],
+    "about": "Joe's Electric has been serving Springfield homeowners and businesses since 2008. Owner Joe Martinez is a master electrician with 20+ years of experience.",
+    "services": [
+        {
+        "icon": "lucide:zap",
+        "title": "Panel Upgrades",
+        "description": "100A to 400A upgrades for homes and small businesses.",
+        "price": "From $850"
+        },
+        {
+        "icon": "lucide:plug",
+        "title": "Outlet & Switch Installation",
+        "description": "New outlets, USB outlets, and smart switches throughout your home.",
+        "price": "From $120"
+        },
+        {
+        "icon": "lucide:car",
+        "title": "EV Charger Installation",
+        "description": "Level 2 home EV charger installation. We handle permitting and inspection.",
+        "price": "From $650"
+        }
+    ],
+    "hours": {
+        "monday":    { "open": "7:00 AM", "close": "6:00 PM", "closed": false },
+        "tuesday":   { "open": "7:00 AM", "close": "6:00 PM", "closed": false },
+        "wednesday": { "open": "7:00 AM", "close": "6:00 PM", "closed": false },
+        "thursday":  { "open": "7:00 AM", "close": "6:00 PM", "closed": false },
+        "friday":    { "open": "7:00 AM", "close": "6:00 PM", "closed": false },
+        "saturday":  { "open": "8:00 AM", "close": "3:00 PM", "closed": false },
+        "sunday":    { "open": null,       "close": null,       "closed": true  }
+    },
+    "trustBadges": [
+        { "icon": "lucide:shield-check", "label": "Licensed Master Electrician", "sub": "State of Illinois — Lic# IL-ME-088234" },
+        { "icon": "lucide:badge-check",  "label": "Fully Insured",               "sub": "General liability + workers comp"   },
+        { "icon": "lucide:award",        "label": "NECA Certified",               "sub": "Member since 2011"                  }
+    ],
+    "gallery": [
+        { "url": "/images/gallery-1.jpg", "caption": "Panel upgrade — Lincoln Ave" },
+        { "url": "/images/gallery-2.jpg", "caption": "EV charger install"          },
+        { "url": "/images/gallery-3.jpg", "caption": "Service panel rewire"        },
+        { "url": "/images/gallery-4.jpg", "caption": "Smart switch installation"   }
+    ],
+    "reviews": [
+        {
+        "id": "r1",
+        "author": "Sarah Johnson",
+        "rating": 5,
+        "date": "2024-11-15",
+        "serviceUsed": "Panel Upgrade",
+        "text": "Joe showed up on time, explained everything clearly, and finished the job in one day. Incredibly professional."
+        },
+        {
+        "id": "r2",
+        "author": "Mike Thompson",
+        "rating": 5,
+        "date": "2024-10-28",
+        "serviceUsed": "EV Charger Install",
+        "text": "Handled all the permitting and inspection himself. Zero stress on my end. Highly recommend."
+        },
+        {
+        "id": "r3",
+        "author": "Linda Park",
+        "rating": 4,
+        "date": "2024-09-10",
+        "serviceUsed": "Outlet Installation",
+        "text": "Quick, clean work. Added 4 outlets in my garage same day I called. Fair price."
+        }
+    ]
+}
