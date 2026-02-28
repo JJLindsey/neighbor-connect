@@ -40,7 +40,7 @@
 
   /* ── Text ── */
   --color-text:           #0f172a;   /* primary text — near black         */
-  --color-text-secondary: #475569;   /* secondary text — medium gray      */
+  --color-text-secondary: #023275;   /* secondary text — medium gray      */
   --color-text-muted:     #94a3b8;   /* muted text — placeholders         */
   --color-text-inverse:   #ffffff;   /* text on dark backgrounds          */
 
@@ -621,8 +621,8 @@ p {
 /* Ghost badge — for dark backgrounds */
 .badge--ghost {
   background: rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.9);
-  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(1, 17, 74, 0.9);
+  border: 1px solid rgba(254, 254, 254, 0.622);
   backdrop-filter: blur(4px);
 }
 

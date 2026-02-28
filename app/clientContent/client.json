@@ -12,7 +12,7 @@
     "rating": 4.8,
     "reviewCount": 47,
     "availability": ["Mon–Fri", "Sat until 3pm"],
-    "photo": "https://unsplash.com/photos/man-in-blue-white-and-red-plaid-button-up-shirt-wearing-yellow-hard-hat-holding-black-zWOgsj3j0wA",
+    "photo": "/images/joe-avatar.png",
     "heroImage": "/images/joe-hero.jpg",
     "specialties": ["Panel Upgrades", "EV Chargers", "Emergency Service"],
     "about": "Joe's Electric has been serving Springfield homeowners and businesses since 2008. Owner Joe Martinez is a master electrician with 20+ years of experience.",

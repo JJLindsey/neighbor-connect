@@ -16,6 +16,18 @@
       </div>
 
       <div class="hero__info">
+        <!-- <div class="hero__badges">
+          <span
+            v-for="s in client.specialties?.slice(0, 3)"
+            :key="s"
+            class="badge badge--ghost"
+          >
+            {{ s }}
+          </span>
+        </div> -->
+
+        <h1 class="hero__name">{{ client.name }}</h1>
+        <p class="hero__tagline">{{ client.tagline }}</p>
         <div class="hero__badges">
           <span
             v-for="s in client.specialties?.slice(0, 3)"
@@ -25,10 +37,6 @@
             {{ s }}
           </span>
         </div>
-
-        <h1 class="hero__name">{{ client.name }}</h1>
-        <p class="hero__tagline">{{ client.tagline }}</p>
-
         <div class="hero__meta">
           <span class="hero__meta-item">
             <Icon name="lucide:map-pin" size="14" />
@@ -44,7 +52,7 @@
           </span>
         </div>
 
-        <StarRating
+        <UiStarRating
           :rating="client.rating"
           :review-count="client.reviewCount"
           :size="18"
@@ -55,10 +63,10 @@
         <NuxtLink to="/book" class="btn btn-primary btn--lg">
           Book Now
         </NuxtLink>
-        <NuxtLink to="/quote" class="btn btn-outline-white btn--lg">
+        <NuxtLink to="/quote" class="btn btn-outline btn--lg">
           Request a Quote
         </NuxtLink>
-        <a :href="`tel:${client.phone}`" class="btn btn-ghost btn--lg hero__phone">
+        <a :href="`tel:${client.phone}`" class="btn btn-primary btn--lg hero__phone">
           <Icon name="lucide:phone" size="16" />
           {{ client.phone }}
         </a>
@@ -74,7 +82,8 @@
 
     const heroStyle = computed(() => ({
         backgroundImage: props.client.heroImage ? `url(${props.client.heroImage})`
-    : `linear-gradient(135deg, var(--color-primary) 0%, #2d4a6e 100%)`
+        : 
+        `linear-gradient(135deg, var(--color-primary) 0%, #2d4a6e 100%)`
     }))
 </script>
 
@@ -93,20 +102,19 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(10, 20, 40, 0.45) 0%,
-    rgba(10, 20, 40, 0.78) 100%
+    rgba(0, 65, 194, 0.45) 0%,
+    rgba(249, 248, 229, 0.78) 100%
   );
 }
 
 .hero__body {
   position: relative;
   z-index: 1;
-  display: flex;
-  align-items: flex-end;
-  gap: 2rem;
-  padding-bottom: 3rem;
-  padding-top: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 0;
 }
 
 /* Avatar */
@@ -115,8 +123,8 @@
   flex-shrink: 0;
 }
 .hero__avatar {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: var(--radius-lg);
   object-fit: cover;
   border: 3px solid rgba(255,255,255,0.25);
@@ -150,14 +158,14 @@
 .hero__name {
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-weight: var(--weight-black);
-  color: #fff;
+  color: var(--color-text);
   margin-bottom: var(--space-2);
   letter-spacing: -0.02em;
 }
 
 .hero__tagline {
   font-size: var(--text-md);
-  color: rgba(255,255,255,0.82);
+  color: var(--color-text-secondary);
   margin-bottom: var(--space-4);
   line-height: var(--leading-snug);
 }
@@ -173,7 +181,7 @@
   align-items: center;
   gap: var(--space-2);
   font-size: var(--text-sm);
-  color: rgba(255,255,255,0.75);
+  color: var(--color-text-secondary);
 }
 
 /* CTA */
@@ -181,8 +189,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
-  flex-shrink: 0;
-  min-width: 175px;
+  align-self: center;
 }
 .hero__phone {
   color: rgba(255,255,255,0.85);
