@@ -145,9 +145,9 @@ const steps = [
 
       <div class="grid-2">
         <ClientCard
-          v-for="p in featured"
-          :key="p.id"
-          :provider="p"
+          v-for="c in featured"
+          :key="c.id"
+          :client="c"
         />
       </div>
     </div>
